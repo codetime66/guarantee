@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.2//EN" "http://java.sun.com/j2ee/dtds/application_1_2.dtd">
+<application>
+   <display-name>Garantias</display-name>
+   <description>Garantias</description>
+   <module>
+      <web>
+         <web-uri>Garantias.war</web-uri>
+         <context-root>Garantias</context-root>
+      </web>
+  </module>
+   <module> 
+      <web>
+         <web-uri>InstrumentoFinanceiro.war</web-uri>
+         <context-root>InstrumentoFinanceiro</context-root>
+      </web>
+   </module>
+   <module> 
+      <web>
+         <web-uri>RegistroOperacao.war</web-uri>
+         <context-root>RegistroOperacao</context-root>
+      </web>
+   </module>
+   <module>
+      <web>
+         <web-uri>Operacao.war</web-uri>
+         <context-root>Operacao</context-root>
+      </web>
+   </module>
+   <!--<module>
+         <web>
+            <web-uri>Sca.war</web-uri>
+            <context-root>Sca</context-root>
+         </web>
+  </module>-->
+    <module>
+      <ejb>invocadorejb.jar</ejb>
+   </module>
+</application>

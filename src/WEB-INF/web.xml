@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+  "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<display-name>Action</display-name>
+		<description>Generic action servlet.</description>
+		<servlet-class>br.com.cetip.infra.web.action.http.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>action-package-names</param-name>
+			<param-value>
+				br.com.cetip.aplicacao.garantias.apinegocio,
+				br.com.cetip.aplicacao.garantias.web,
+				br.com.cetip.aplicacao.garantias.web.selic,
+				br.com.cetip.aplicacao.garantias.web.colateral,
+				br.com.cetip.aplicacao.garantias.web.agro,
+				br.com.cetip.aplicacao.garantias.negocio,
+				br.com.cetip.aplicacao.garantias.servico
+			</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/ctp/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
